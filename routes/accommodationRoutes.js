@@ -37,6 +37,8 @@ router.post(
       location: req.body.location,
       checkInDate: req.body.checkInDate,
       checkOutDate: req.body.checkOutDate,
+      description: req.body.description,
+      info: req.body.info,
       numberOfGuests: nog,
       price: pricee,
       img: images,
@@ -51,5 +53,8 @@ router.post(
 );
 
 router.route("/").get(accommodationController.getAllAccommodation);
+
+router.route("/:id").get(accommodationController.getAccommodationbyId);
+
 
 module.exports = router;

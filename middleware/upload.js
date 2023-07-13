@@ -15,7 +15,7 @@ const storage = multer.diskStorage({
 })
 
 const imageFileFilter = (req, file, cb) => {
-    if (!file.originalname.match(/\.(jpg|jpeg|png|gif|mp3|m4a|mp4|wav|aac)$/)) {
+    if (!file.originalname.match(/\.(jpg|jpeg|png|gif|webp)$/)) {
         return cb(new Error('File format not supported'), false)
     }
     cb(null, true)

@@ -35,13 +35,23 @@ const addTrip = (req, res, next) => {
 };
 
 const getAllTrips = (req, res, next) => {
-  Trips.find().then((trips) => res.json(trips));
+  Trips.find().then((trips) =>
+  {
+
+    console.log(trips);
+
+    res.json(trips);
+
+  }
+  
+   );
 };
 
 const getTripbyId = (req, res, next) => {
   Trips.findById(req.params.id)
   .then((trip) => {
-    res.json(trip);
+    console.log(trip)
+    res.status(200).json(trip);
   })
   .catch((err)=> console.log(err))
   ;

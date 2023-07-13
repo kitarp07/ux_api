@@ -25,4 +25,15 @@ const getAllFlights = (req, res, next) => {
   );
 };
 
-module.exports = { addFlight, getAllFlights };
+
+const getFlightbyId = (req, res, next) => {
+  Flights.findById(req.params.id)
+  .then((flight) => {
+    console.log(flight)
+    res.status(200).json(flight);
+  })
+  .catch((err)=> console.log(err))
+  ;
+};
+
+module.exports = { addFlight, getAllFlights, getFlightbyId };

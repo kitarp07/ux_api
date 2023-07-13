@@ -7,6 +7,7 @@ const addAccommodation = (req, res, next) => {
     checkInDate: req.body.checkInDate,
     checkOutDate: req.body.checkOutDate,
     numberOfGuests: req.body.numberOfGuests,
+    description: req.body.description,
     price: req.body.price,
   };
 
@@ -23,4 +24,16 @@ const getAllAccommodation = (req, res, next) => {
     res.json(stays)
   );
 };
-module.exports = { addAccommodation, getAllAccommodation };
+
+
+const getAccommodationbyId = (req, res, next) => {
+  Accommodation.findById(req.params.id)
+  .then((accommodation) => {
+    console.log(accommodation)
+    res.status(200).json(accommodation);
+  })
+  .catch((err)=> console.log(err))
+  ;
+};
+
+module.exports = { addAccommodation, getAllAccommodation, getAccommodationbyId };

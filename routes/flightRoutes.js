@@ -50,4 +50,8 @@ router.post("/create-flight", upload.array("images", 5), (req, res, next) => {
     .catch(next);
 });
 router.route('/').get(flightsController.getAllFlights)
+
+router.route("/:id").get(flightsController.getFlightbyId);
+
+
 module.exports = router;

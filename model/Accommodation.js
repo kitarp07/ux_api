@@ -17,10 +17,23 @@ const accommodationSchema = new mongoose.Schema({
     type: String,
     trim: true
   },
+
+  description: {
+    type: String,
+    trim: true
+
+  },
+
+  info: {
+    type: String,
+    trim: true
+
+  },
   numberOfGuests: {
     type: Number,
     trim: true
   },
+
   price: {
     type: Number,
     trim: true

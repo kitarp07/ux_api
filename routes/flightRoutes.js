@@ -33,11 +33,15 @@ router.post("/create-flight", upload.array("images", 5), (req, res, next) => {
 
   let flight = {
     airline: req.body.airline,
+    departure_date: req.body.departure_date,
+    arrival_date: req.body.arrival_date,
     departure_time: req.body.departure_time,
     arrival_time: req.body.arrival_time,
     origin: req.body.origin,
     destination: req.body.destination,
-   
+    baggage_limit: req.body.baggage_limit,
+    baggage_carry_limit: req.body.baggage_carry_limit,
+    flightDuration: req.body.flightDuration,
     no_of_passengers: nop,
     price: pricee,
     img: images,

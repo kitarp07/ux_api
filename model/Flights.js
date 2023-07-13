@@ -6,6 +6,14 @@ const flightSchema = new mongoose.Schema({
         
         trim: true,
     },
+    departure_date: {
+        type: String,
+        trim: true,
+    },
+    arrival_date : {
+        type: String,
+        trim: true,
+    },
     departure_time: {
         type: String,
         trim: true,
@@ -21,6 +29,20 @@ const flightSchema = new mongoose.Schema({
     destination:{
         type: String,
         trim: true,
+    },
+   
+    baggage_limit:{
+        type: String,
+        trim: true,
+    },
+    baggage_carry_limit:{
+        type: String,
+        trim: true,
+    },
+    flightDuration: {
+        type: String,
+        trim: true,
+
     },
     no_of_passengers:{
         type: Number,

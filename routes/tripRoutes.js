@@ -36,6 +36,17 @@ router.post("/create-trip", upload.array("images", 5), (req, res, next) => {
     destination: req.body.destination,
     description: req.body.description,
     itinerary: req.body.itinerary,
+    itinerary_2: req.body.itinerary_2,
+    itinerary_3: req.body.itinerary_3,
+    itinerary_4: req.body.itinerary_4,
+    itinerary_5: req.body.itinerary_5,
+
+    
+    offer_1: req.body.offer_1,
+    offer_2: req.body.offer_2,
+    offer_3: req.body.offer_3,
+    offer_4: req.body.offer_4,
+    
     startDate: req.body.startDate,
     endDate: req.body.endDate,
     numberOfPassengers: nop,

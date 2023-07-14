@@ -21,8 +21,44 @@ const tripSchema = new mongoose.Schema({
   itinerary:{
     type: String,
     trim: true,
-
   },
+  itinerary_1:{
+    type: String,
+    trim: true,
+  },
+  itinerary_2:{
+    type: String,
+    trim: true,
+  },
+  itinerary_3:{
+    type: String,
+    trim: true,
+  },
+  itinerary_4:{
+    type: String,
+    trim: true,
+  },
+  itinerary_5:{
+    type: String,
+    trim: true,
+  },
+  offer_1:{
+    type: String,
+    trim: true,
+  },
+  offer_2:{
+    type: String,
+    trim: true,
+  },
+  offer_3:{
+    type: String,
+    trim: true,
+  },
+  offer_4:{
+    type: String,
+    trim: true,
+  },
+
   startDate: {
     type: String,
     trim: true,

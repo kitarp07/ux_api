@@ -29,6 +29,45 @@ const accommodationSchema = new mongoose.Schema({
     trim: true
 
   },
+
+  info_2: {
+    type: String,
+    trim: true
+
+  },
+  info_3: {
+    type: String,
+    trim: true
+
+  },
+  info_4: {
+    type: String,
+    trim: true
+
+  },
+  info_5: {
+    type: String,
+    trim: true
+
+  },
+
+  offer_1:{
+    type: String,
+    trim: true,
+  },
+  offer_2:{
+    type: String,
+    trim: true,
+  },
+  offer_3:{
+    type: String,
+    trim: true,
+  },
+  offer_4:{
+    type: String,
+    trim: true,
+  },
+
   numberOfGuests: {
     type: Number,
     trim: true

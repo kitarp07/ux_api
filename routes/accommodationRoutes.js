@@ -39,6 +39,16 @@ router.post(
       checkOutDate: req.body.checkOutDate,
       description: req.body.description,
       info: req.body.info,
+      info_2: req.body.info_2,
+      info_3: req.body.info_3,
+      info_4: req.body.info_4,
+      info_5: req.body.info_5,
+
+      offer_1: req.body.offer_1,
+      offer_2: req.body.offer_2,
+      offer_3: req.body.offer_3,
+      offer_4: req.body.offer_4,
+     
       numberOfGuests: nog,
       price: pricee,
       img: images,

@@ -8,7 +8,7 @@ const checkoutSchema = new mongoose.Schema({
     },
     trip: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Trip',
+      ref: 'Trips',
       
     },
     flight: {
@@ -59,6 +59,11 @@ const checkoutSchema = new mongoose.Schema({
     },
     trip_type: {
       type: String,
+      trim: true
+    
+    },
+    price: {
+      type: Number,
       trim: true
     
     },

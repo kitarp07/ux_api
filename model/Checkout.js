@@ -11,8 +11,55 @@ const checkoutSchema = new mongoose.Schema({
       ref: 'Trip',
       
     },
-    numTravelers: {
-      type: Number,
+    flight: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Flights',
+      
+    },
+    stay: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Accommodation',
+      
+    },
+   
+    street_address: {
+      type: String,
+      trim: true
+    
+    },
+    street_address: {
+      type: String,
+      trim: true
+    
+    },
+    apartment_number: {
+      type: String,
+      trim: true
+    
+    },
+    state: {
+      type: String,
+      trim: true
+    
+    },
+    zipcode: {
+      type: String,
+      trim: true
+    
+    },
+    city: {
+      type: String,
+      trim: true
+    
+    },
+    country: {
+      type: String,
+      trim: true
+    
+    },
+    trip_type: {
+      type: String,
+      trim: true
     
     },
     createdAt: {
